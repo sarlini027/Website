@@ -64,8 +64,49 @@
                       Jangan lewatkan kesempatan untuk mengikuti webinar ini dan tingkatkan karir Anda di era digital yang semakin berkembang pesat!
                     </p>
                   </div>
+                  
                 </body>
-                </html>
-                </div>
+
+    </div>
+     
 </body>
 </html>
+<script>
+  // Mendapatkan nilai input dari parameter URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('nama');
+  const email = urlParams.get('email');
+  const asalDaerah = urlParams.get('asalDaerah');
+  const noHandphone = urlParams.get('noHandphone');
+
+  // Menampilkan hasil registrasi pada halaman
+  const hasilRegistrasiElement = document.getElementById('hasil-registrasi');
+  hasilRegistrasiElement.innerHTML = `
+    <p>Nama: ${nama}</p>
+    <p>Email: ${email}</p>
+    <p>Asal Daerah: ${asalDaerah}</p>
+    <p>No Handphone: ${noHandphone}</p>
+  `;
+</script>
+<div id="hasil-submit"></div>
+document.getElementById('form-submit').addEventListener('submit', function(event) {
+  event.preventDefault(); // Mencegah halaman untuk refresh
+
+  // Mengambil nilai input formulir
+  const nama = document.querySelector('#form-submit input[name="nama"]').value;
+  const email = document.querySelector('#form-submit input[name="email"]').value;
+  const asalDaerah = document.querySelector('#form-submit input[name="asalDaerah"]').value;
+  const noHandphone = document.querySelector('#form-submit input[name="noHandphone"]').value;
+
+  // Menampilkan hasil submit pada halaman "deskripsi.html"
+  const hasilSubmitElement = window.opener.document.getElementById('hasil-submit');
+  hasilSubmitElement.innerHTML = `
+    <p>Nama: ${nama}</p>
+    <p>Email: ${email}</p>
+    <p>Asal Daerah: ${asalDaerah}</p>
+    <p>No Handphone: ${noHandphone}</p>
+  `;
+
+  window.close(); // Menutup halaman "Presensi" setelah submit
+});
+
