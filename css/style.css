@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+<<<<<<< HEAD
 .logo-container {
     position: absolute;
     top: 10px;
@@ -9,6 +10,8 @@
     width: 50px; /* Sesuaikan ukuran logo sesuai kebutuhan Anda */
     height: auto;
   }
+=======
+>>>>>>> 817db4b904e662729a4a6f6830ec1f2339743045
 :root {
     --primary: #1E60AA;
     --secondary: #FF4917;
@@ -245,7 +248,11 @@
 }
 
 .page-header {
+<<<<<<< HEAD
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/about.11.jpg) center center no-repeat;
+=======
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
+>>>>>>> 817db4b904e662729a4a6f6830ec1f2339743045
     background-size: cover;
 }
 
@@ -256,7 +263,11 @@
 
 /*** Facts ***/
 .fact {
+<<<<<<< HEAD
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/about.11.jpg) center center no-repeat;
+=======
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
+>>>>>>> 817db4b904e662729a4a6f6830ec1f2339743045
     background-size: cover;
 }
 
